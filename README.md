@@ -5,7 +5,7 @@ A wrapper for the Label Studio SDK to run inside a Teknoir Notebook.
 ## Installation
 
 ```bash
-sudo pip install git+git://github.com/teknoir/teknoir-labelstudio-sdk.git#egg=teknoir-labelstudio-sdk
+pip install git+https://github.com/teknoir/teknoir-labelstudio-sdk.git#egg=teknoir-labelstudio-sdk
 ```
 
 ## Usage
