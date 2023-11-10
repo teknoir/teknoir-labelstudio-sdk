@@ -3,3 +3,5 @@ venv
 node_modules
 *-credentials.json
 *.egg-info
+export
+workspace

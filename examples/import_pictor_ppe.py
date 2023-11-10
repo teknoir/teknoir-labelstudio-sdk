@@ -63,7 +63,7 @@ def import_pictor_ppe_set(text):
         image_name = yolo_annotations.pop(0)
 
         current_blob = bucket.get_blob(f'{pictor_ppe_image_path}/{image_name}')
-        _, temp_local_filename = mkstemp(prefix=Path(image_name).name, suffix=Path(image_name).suffix)
+        _, temp_local_filename = mkstemp(prefix=Path(image_name).stem, suffix=Path(image_name).suffix)
         current_blob.download_to_filename(temp_local_filename)
         print(f"Image {image_name} was downloaded to {temp_local_filename}.")
 
